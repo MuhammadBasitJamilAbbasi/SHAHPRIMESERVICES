@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', animateStats);
     animateStats();
 
-    const revealElements = document.querySelectorAll('.feature-card, .service-card, .intro-content, .section-header, .about-content, .contact-container');
+    const revealElements = document.querySelectorAll('.feature-card, .service-card, .step-card, .testimonial-card, .area-card, .intro-content, .section-header, .about-content, .contact-container, .intro-image, .why-us-content, .why-us-image, .trust-badges, .intro-stats');
     
     function reveal() {
         revealElements.forEach(element => {

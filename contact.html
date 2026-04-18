@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - SHAH PRIME SERVICES PTY LTD</title>
+    <meta name="description" content="Contact SHAH PRIME SERVICES for professional security and delivery services in Victoria. Get a free quote today.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
@@ -35,71 +37,220 @@
 
     <section class="page-hero">
         <div class="container">
-            <h1>Contact Us</h1>
-            <p>Get in touch with us for all your security and delivery needs</p>
+            <span class="hero-badge">Get In Touch</span>
+            <h1 class="animate__animated animate__fadeInUp">Contact Us</h1>
+            <p class="animate__animated animate__fadeInUp animate__delay-1">We'd love to hear from you. Reach out for a free quote or consultation.</p>
         </div>
     </section>
 
     <section class="contact-section">
         <div class="container">
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h2>Let's Connect</h2>
-                    <p>We are here to answer any questions you may have about our security and delivery services. Reach out to us and we'll respond as soon as possible.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>17 Hawkesbury Road, Mickleham VIC 3064, Victoria, Australia</span>
+            <div class="contact-wrapper">
+                <div class="contact-info-section reveal-left">
+                    <span class="section-tag">Contact Information</span>
+                    <h2>Let's Start a Conversation</h2>
+                    <p>Whether you have a question about our services, need a custom quote, or want to discuss your specific requirements, our team is here to help.</p>
+                    
+                    <div class="contact-info-grid">
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                                
+                            </div>
+                            <div class="contact-info-content">
+                                <br>
+                                <h4>Visit Us</h4>
+                                <p>17 Hawkesbury Road<br>Mickleham VIC 3064<br>Victoria, Australia</p>
+                            </div>
                         </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>shahprimeservices@gmail.com</span>
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                           
+                            <div class="contact-info-content">
+                                 <br>
+                                <h4>Email Us</h4>
+                                <p>shahprimeservices@gmail.com</p>
+                            </div>
+                        </div>
+                        <!-- <div class="contact-info-card">
+                            <div class="contact-info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-info-content">
+                                <h4>Call Us</h4>
+                                <p>(04) 0000 0000</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-info-content">
+                                <h4>Office Hours</h4>
+                                <p>Mon - Sat: 8:00 AM - 6:00 PM<br>24/7 Emergency Available</p>
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <div class="contact-social">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <div id="formMessage" class="form-message"></div>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Full Name *</label>
-                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+                <div class="contact-form-section reveal-right">
+                    <div class="contact-form-container">
+                        <div class="form-header">
+                            <h3>Send Us a Message</h3>
+                            <p>Fill out the form below and we'll get back to you within 24 hours.</p>
                         </div>
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required placeholder="Enter your email address">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number *</label>
-                            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" name="message" required placeholder="Enter your message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
-                    </form>
+                        <div id="formMessage" class="form-message"></div>
+                        <form id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Full Name *</label>
+                                    <input type="text" id="name" name="name" required placeholder="John Smith">
+                                </div>
+                                <div class="form-group">
+                                    <label for="company">Company Name</label>
+                                    <input type="text" id="company" name="company" placeholder="Your Company">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required placeholder="john@example.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" required placeholder="04XX XXX XXX">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Service Interested In</label>
+                                <select id="service" name="service">
+                                    <option value="">Select a service...</option>
+                                    <option value="commercial-security">Commercial Security</option>
+                                    <option value="event-security">Event Security</option>
+                                    <option value="residential-security">Residential Security</option>
+                                    <option value="delivery-services">Delivery Services</option>
+                                    <option value="static-guarding">Static Guarding</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" required placeholder="Tell us about your requirements..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="submitBtn">Send Message <i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="map-section">
+        <div class="container">
+            <div class="map-container reveal">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31528.987654321!2d144.9!3d-37.4!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad43f0000000000%3A0x0000000000000000!2sMickleham%20VIC%203064%2C%20Australia!5e0!3m2!1sen!2sau!4v1600000000000!5m2!1sen!2sau" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">FAQ</span>
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions about our services.</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item reveal">
+                    <h4><i class="fas fa-question-circle"></i> How quickly can you respond to a request?</h4>
+                    <p>We typically respond to all inquiries within 24 hours. For urgent security needs, we can often arrange same-day consultation.</p>
+                </div>
+                <div class="faq-item reveal">
+                    <h4><i class="fas fa-question-circle"></i> What areas do you serve?</h4>
+                    <p>We provide services across all of Victoria, including Melbourne metro, regional areas, and surrounding regions.</p>
+                </div>
+                <div class="faq-item reveal">
+                    <h4><i class="fas fa-question-circle"></i> Are your security staff licensed?</h4>
+                    <p>Yes, all our security professionals are fully licensed, trained, and background-checked to industry standards.</p>
+                </div>
+                <div class="faq-item reveal">
+                    <h4><i class="fas fa-question-circle"></i> Do you offer customized security solutions?</h4>
+                    <p>Absolutely! We tailor our services to meet your specific requirements and provide bespoke security plans.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-col">
-                <h4>Address</h4>
-                <p>17 Hawkesbury Road<br>Mickleham VIC 3064<br>Victoria, Australia</p>
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-col footer-about">
+                    <div class="footer-logo">
+                        <h3>SHAH PRIME SERVICES</h3>
+                        <span>PTY LTD</span>
+                    </div>
+                    <p>Your trusted partner for professional security services and reliable delivery solutions across Victoria, Australia.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Commercial Security</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Event Security</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Delivery Services</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Static Guarding</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 17 Hawkesbury Road<br>Mickleham VIC 3064</li>
+                        <li><i class="fas fa-envelope"></i> shahprimeservices@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> (04) 0000 0000</li>
+                        <li><i class="fas fa-clock"></i> Mon - Sat: 8:00 AM - 6:00 PM</li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-col">
-                <h4>Contact</h4>
-                <p><i class="fas fa-envelope"></i> shahprimeservices@gmail.com</p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 <strong>SHAH PRIME SERVICES</strong> PTY LTD. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
             </div>
-            <div class="footer-col">
-                <h4>ABN</h4>
-                <p>41688175626</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 SHAH PRIME SERVICES PTY LTD. All rights reserved.</p>
         </div>
     </footer>
 
